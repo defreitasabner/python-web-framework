@@ -1,5 +1,8 @@
 from injectors.controller_injector import ControllerInjector
 
-if __name__ == '__main__':
+def main():
     controllers = ControllerInjector.inject()
     controllers['example_controller'].response()
+
+if __name__ == '__main__':
+    main()

@@ -9,7 +9,7 @@ class ControllerInjector(Injector):
     @staticmethod
     def inject():
         package_name = 'controllers'
-        package = locate(package_name, forceload = True)
+        package = locate(package_name)
         all_modules = inspect.getmembers(package, inspect.ismodule)
         controllers = dict()
         for module_name, module in all_modules:

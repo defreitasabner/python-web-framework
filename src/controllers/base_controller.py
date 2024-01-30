@@ -1,3 +1,4 @@
-class BaseController(object):
-    def __init__(self) -> None:
-        pass
+from abc import ABC
+
+class BaseController(ABC):
+    pass
